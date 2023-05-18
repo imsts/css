@@ -1,17 +1,105 @@
-{{!--
-Це код container файлу для index сторінки,
-в якому міститься код, котрий буде віддаватися по шляху (PATH) - "/"
---}}
+<div class="card m-3 p-3">
 
-<div class="p-5">
-    <h1>USB хаб eqweqwe Type C 12 в 1 HDMI VGA AUX 3.5 mm</h1>
+    <div class="card m-3 p-3 card-grey border-3 col-8">
+        <p class="big-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Unde, porro nam sequi iste placeat
+            neque commodi doloribus cupiditate, praesentium, voluptatum quod fugiat! Maiores aut ut repellendus dolorem
+            perferendis quam ex.</p>
+    </div>
 
-    <button type="button" class="btn btn-primary">Купити</button>
+    <div class="card m-3 p-3 card-grey border-3 col-8">
+        <button class="btn btn-primary">Click me</button>
+        <br>
+        <a class="btn btn-primary">Click me</a>
+        <br>
+        <a class="btn btn-primary">Click me</a>
+        <br>
+        <a class="btn">Click me</a>
+    </div>
+
+    <div class="card m-3 p-3 card-grey border-3 col-8">
+        <img src="https://picsum.photos/300/300" height="300px" alt="image card 300px" class="card-img">
+        <a href="https://picsum.photos/300/300" rel="external">Link</a>
+        <a href="https://picsum.photos/300/300" rel="no-external">Link</a>
+    </div>
+
+    <div class="card m-3 p-3 card-grey border-3 col-5">
+        input:
+        <input class="input-dark" placeholder="Цей текст - placeholder" required>
+        <br>
+        input:
+        <input class="input-dark" placeholder="Цей текст - placeholder">
+        <br>
+        input:
+        <input class="input-dark" placeholder="Цей текст - placeholder" type="number">
+        input:
+        <input class="input-dark" placeholder="Цей текст - placeholder" type="number">
+    </div>
+
+    <div class="card m-3 p-3 card-grey border-3 col-5">
+        <b></b>
+        <b>Без класу</b>
+        <b class=" big">З класом "big"</b>
+    </div>
+
+    <div class="card m-3 p-3 card-grey border-3 zel col-5">
+        <span>селектор порядкової дитини 1</span>
+        <span>селектор порядкової дитини 1</span>
+        <span>селектор порядкової дитини 1</span>
+        <span>селектор порядкової дитини 1</span>
+        <span>селектор порядкової дитини 1</span>
+    </div>
+
+    <div class="card m-3 p-3 card-grey border-3">
+        <b>First</b>
+        <p>First</p>
+        <strong class="item">TEST STRONG ONLY</strong>
+        <p>Second</p>
+        <b>Second</b>
+    </div>
+
+    <div class="card m-3 p-3 card-grey border-3">
+        <ul>
+            <li class="item">Перша дитина</li>
+            <li class="item">Друга дитина</li>
+            <li class="item">Третя дитина</li>
+            <li class="item">Четверта дитина</li>
+        </ul>
+    </div>
+
+    <div class="row card-body p-3">
+        <div class="card col-6 text-center bg-primary border-4">
+            <h1>Hello World!</h1>
+            <p>Додатковий другорядний текст</p>
+        </div>
+        <div class="col-6">
+            <button type="button" class="btn btn-primary m-2">button</button>
+
+            <button type="button" class="btn btn-secondary m-2">button</button>
+
+            <button type="button" class="btn btn-info m-2">button</button>
+        </div>
+    </div>
+    <div class="card m-3 p-3">
+        <div class="box">
+            <h2 class="p-2">Box</h2>
+            <p>Додатковий другорядний текст</p>
+        </div>
+    </div>
+    <div class="card m-3 p-3">
+        <div class="box">
+            <h2 id="user" class="p-2">Box</h2>
+            <p>Додатковий другорядний текст</p>
+        </div>
+    </div>
+    <div class="card m-3 p-3">
+        <div>
+            <h2 style="color:green" class="p-2">Box</h2>
+            <p>Додатковий другорядний текст</p>
+        </div>
+    </div>
+
+    <div class="card m-3 p-3">
+        <p><b>Дочірній селектор</b></p>
+    </div>
+
 </div>
-
-{{!--
-Цей код містить лише те, що буде виводитись в
-
-<body>
-    Адже наш layout/default.hbs має вже структуру HTML
-    --}}
