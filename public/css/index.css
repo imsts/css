@@ -151,16 +151,29 @@ a[class$='btn'] {
 
 .card {
   background-color: bisque;
+  accent-color: blue;
 }
 
 .card:hover {
-  background-color: #fff;
+  background-color: whitesmoke;
+  accent-color: blue;
 }
 
 .card > p:hover {
   color: rgb(96, 59, 183);
+  font-size: 22px;
 }
 
 h3 {
   writing-mode: vertical-lr;
+  font-weight: 900;
+}
+
+h4 {
+  font-style: italic;
+}
+
+* {
+  font-family: 'Montserrat', sans-serif;
+  font-display: swap;
 }
