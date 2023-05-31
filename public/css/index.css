@@ -1,6 +1,7 @@
-/* :root {
-  background: purple;
-} */
+* {
+  font-family: 'Montserrat', sans-serif;
+  font-display: swap;
+}
 
 html {
   max-width: 1920px;
@@ -10,170 +11,94 @@ body {
   background: #fff;
 }
 
-* {
-  color: rgb(44, 44, 44);
+body.dark {
+  background-color: rgb(40, 36, 55);
 }
 
-/* h1 {
-  color: green;
-} */
-
-.box {
-  background: rgb(210, 255, 8);
+.toggleBtn {
+  z-index: 2;
+  padding: 1rem;
+  text-align: center;
+  border-radius: 5rem;
+  display: flex;
+  justify-content: space-between;
+  box-shadow: 1.5px 1.5px 5px #373636;
+  background: linear-gradient(145deg, #e1e1e1, #fff);
 }
 
-#user {
-  color: blue;
+.bgMove {
+  width: 45px;
+  height: 45px;
+  position: absolute;
+  top: 50%;
+  z-index: -1;
+  border-radius: 50%;
+  transition: all 0.4s linear;
+  transform: translate(80%, -50%);
+  background-color: rgb(27, 23, 23);
 }
 
-div > p > b {
-  color: red;
+.fa-sun {
+  color: white;
 }
 
-h1 + p,
-h2 + p {
-  margin-left: 10px;
+.bgMove.active {
+  color: white;
+  z-index: -2;
+  transition: all 0.4s linear;
+  transform: translate(340%, -50%);
+  background-color: rgb(27, 23, 23);
 }
 
-.card-grey {
-  background: rgb(195, 195, 195);
-  margin: 5px;
+.dark {
+  color: rgb(16, 14, 14);
+  transition: all 0.4s linear;
 }
 
-li:first-child {
-  color: green;
+.active {
+  color: white;
+  transition: all 0.4s linear;
 }
 
-.item {
-  color: blue;
+.active body {
+  background-color: purple;
 }
 
-.item:last-child {
-  color: yellow;
+i {
+  z-index: 4;
+  width: 100px;
+  margin: 0.5rem;
+  cursor: pointer;
+  font-size: 1.5rem;
+  display: flex;
+  position: relative;
+  flex-direction: row;
+  justify-content: space-between;
+  transition: all 0.4s linear;
 }
 
-.item:only-of-type {
-  color: blueviolet;
+.text1 > p {
+  color: lab(90, 10, -45);
+  color: gray;
 }
 
-p:first-of-type {
-  color: blue;
+.text2 > p {
+  background-color: lch(70, 50, 120);
 }
 
-b:last-of-type {
-  color: red;
+.text3 > p {
+  background-color: color-mix(#ff0000, #7bff00);
 }
 
-span:nth-child(1) {
-  color: rgb(151, 0, 0);
-}
-
-span:nth-child(2) {
-  color: red;
-}
-
-span:nth-child(3) {
-  color: rgb(255, 84, 84);
-}
-
-.big {
-  color: yellow;
-}
-
-b:not(.big) {
-  color: green;
-}
-
-b:empty {
-  height: 20px;
-  background: #eaeaea;
-}
-
-.input-dark {
-  background: wheat;
-}
-
-.input-dark[required] {
-  background: rebeccapurple;
-}
-
-.input-dark[type='number'] {
-  background: rgb(41, 183, 67);
-}
-
-.card-img[alt~='image'] {
-  height: 500px;
-}
-
-.card[class~='zel'] {
-  background: rgb(51, 134, 115);
-}
-
-a[rel~='external'] {
-  color: red;
-}
-
-button[class|='btn'] {
-  background: rgb(192, 149, 31);
-}
-
-a[class^='btn'] {
-  background: rgb(192, 149, 31);
-}
-
-a[class*='btn'] {
-  background: rgb(47, 222, 58);
-}
-
-a[class$='btn'] {
-  background: rgb(255, 76, 76);
-}
-
-.btn::first-letter {
-  color: rgb(208, 255, 0);
-}
-
-.input-dark::placeholder {
-  color: rgb(255, 255, 255);
-  /* background: gray; */
-}
-
-.big-text::before {
-  content: '$$$';
-  color: green;
-}
-
-.big-text::after {
-  content: '***';
-  color: rgb(255, 0, 0);
-  background: rgb(0, 0, 0);
-}
-
-.card {
-  background-color: bisque;
-  accent-color: blue;
-}
-
-.card:hover {
-  background-color: whitesmoke;
-  accent-color: blue;
-}
-
-.card > p:hover {
-  color: rgb(96, 59, 183);
-  font-size: 22px;
+.text4 > input {
+  width: 40px;
+  height: 40px;
 }
 
 h3 {
-  writing-mode: vertical-lr;
-  font-weight: 900;
+  color: orange;
 }
 
-h4 {
-  font-style: italic;
-}
-
-* {
-  font-family: 'Montserrat', sans-serif;
-  font-display: swap;
+.card {
+  background-color: whitesmoke;
 }

@@ -1,0 +1,179 @@
+/* :root {
+  background: purple;
+} */
+
+html {
+  max-width: 1920px;
+}
+
+body {
+  background: #fff;
+}
+
+* {
+  color: rgb(44, 44, 44);
+}
+
+/* h1 {
+  color: green;
+} */
+
+.box {
+  background: rgb(210, 255, 8);
+}
+
+#user {
+  color: blue;
+}
+
+div > p > b {
+  color: red;
+}
+
+h1 + p,
+h2 + p {
+  margin-left: 10px;
+}
+
+.card-grey {
+  background: rgb(195, 195, 195);
+  margin: 5px;
+}
+
+li:first-child {
+  color: green;
+}
+
+.item {
+  color: blue;
+}
+
+.item:last-child {
+  color: yellow;
+}
+
+.item:only-of-type {
+  color: blueviolet;
+}
+
+p:first-of-type {
+  color: blue;
+}
+
+b:last-of-type {
+  color: red;
+}
+
+span:nth-child(1) {
+  color: rgb(151, 0, 0);
+}
+
+span:nth-child(2) {
+  color: red;
+}
+
+span:nth-child(3) {
+  color: rgb(255, 84, 84);
+}
+
+.big {
+  color: yellow;
+}
+
+b:not(.big) {
+  color: green;
+}
+
+b:empty {
+  height: 20px;
+  background: #eaeaea;
+}
+
+.input-dark {
+  background: wheat;
+}
+
+.input-dark[required] {
+  background: rebeccapurple;
+}
+
+.input-dark[type='number'] {
+  background: rgb(41, 183, 67);
+}
+
+.card-img[alt~='image'] {
+  height: 500px;
+}
+
+.card[class~='zel'] {
+  background: rgb(51, 134, 115);
+}
+
+a[rel~='external'] {
+  color: red;
+}
+
+button[class|='btn'] {
+  background: rgb(192, 149, 31);
+}
+
+a[class^='btn'] {
+  background: rgb(192, 149, 31);
+}
+
+a[class*='btn'] {
+  background: rgb(47, 222, 58);
+}
+
+a[class$='btn'] {
+  background: rgb(255, 76, 76);
+}
+
+.btn::first-letter {
+  color: rgb(208, 255, 0);
+}
+
+.input-dark::placeholder {
+  color: rgb(255, 255, 255);
+  /* background: gray; */
+}
+
+.big-text::before {
+  content: '$$$';
+  color: green;
+}
+
+.big-text::after {
+  content: '***';
+  color: rgb(255, 0, 0);
+  background: rgb(0, 0, 0);
+}
+
+.card {
+  background-color: bisque;
+  accent-color: blue;
+}
+
+.card:hover {
+  background-color: whitesmoke;
+  accent-color: blue;
+}
+
+.card > p:hover {
+  color: rgb(96, 59, 183);
+  font-size: 22px;
+}
+
+h3 {
+  writing-mode: vertical-lr;
+  font-weight: 900;
+}
+
+h4 {
+  font-style: italic;
+}
+
+* {
+  font-family: 'Montserrat', sans-serif;
+  font-display: swap;
+}
