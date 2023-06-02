@@ -38,3 +38,14 @@ btn.addEventListener('click', function () {
     document.body.classList.remove('dark')
   }
 })
+
+Handlebars.registerHelper('showCode', function (index) {
+  // Повертає true або false в залежності від умови для показу компонента
+})
+
+Handlebars.registerHelper(
+  'getComponentTemplateName',
+  function (index) {
+    // Повертає ім'я шаблону компонента на основі індексу
+  },
+)

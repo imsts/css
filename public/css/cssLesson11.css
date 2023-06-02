@@ -25,10 +25,14 @@ code {
   font-family: 'Courier New', monospace;
 }
 
-.text {
+.div {
   color: gray;
   /* display: none; */
   /* display: block; */
   /* display: inline; */
-  display: inline-block;
+  /* display: inline-block; */
+}
+
+button {
+  color: #1307fd;
 }
