@@ -1,0 +1,9 @@
+* {
+  font-family: 'Montserrat', sans-serif;
+  font-display: swap;
+  font-optical-sizing: auto;
+}
+
+body {
+  background: rgb(161, 161, 161);
+}
