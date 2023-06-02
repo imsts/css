@@ -7,3 +7,28 @@
 body {
   background: rgb(255, 255, 255);
 }
+
+.content {
+  background-color: #f9f9f9;
+  box-shadow: 1px 2px 5px gray;
+  margin: 3px;
+  padding: 15px;
+}
+
+code {
+  color: #0800a9;
+}
+
+.code-block {
+  background-color: #f1f1f1;
+  padding: 10px;
+  font-family: 'Courier New', monospace;
+}
+
+.text {
+  color: gray;
+  /* display: none; */
+  /* display: block; */
+  /* display: inline; */
+  display: inline-block;
+}

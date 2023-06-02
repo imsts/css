@@ -1,14 +1,61 @@
-<div class="card p3 m-3">
-    <div class="content">
-        <div>
-            <h4>Назва</h4>
-        </div>
-        <div class='text#'>
-            <p>Опис</p>
-        </div>
-        <small>(не працює)</small>
-        <div>
-            <code>код</code>
+<div class="row p-4">
+    <div class="col-6">
+        <div class="content">
+            <div class="display">
+                <h4>CSS властивість - display</h4>
+            </div>
+            <div class='text'>
+                <p><code>.div {</code></p>
+                <p><code>display: none;</code> /*використовуємо, якщо потрібно приховати контент</p>
+                <p><code>display: block;</code> /*Елемент відображається як блок, займає всю доступну ширину
+                    батьківського
+                    елемента і
+                    починається з нового рядка</p>
+                <p><code>display: inline;</code> /*Елемент відображається в рядку, поряд з іншими елементами, і не
+                    переноситься на
+                    новий
+                    рядок</p>
+                <p><code>display: inline-block;</code> /*Елемент відображається в рядку, але може мати ширину, висоту,
+                    внутрішні
+                    відступи та інші властивості блокових елементів</p>
+                <p><code>}</code></p>
+                <p>Рекомендовано використовувати в парі з атрибутом
+                    <code>hidden</code> в середині тегу.
+                </p>
+                <code class="code-block" id="hiddenCode"
+                    style="display: none;">&lt;div hidden&gt;Контент в середині не буде відображатись&lt;/div&gt;</code>
+                <button onclick="toggleCodeVisibility()">Показати код</button>
+            </div>
         </div>
     </div>
+    <div class="col-6">
+        <div class="content">
+            <div class="display">
+                <h4>CSS властивість - display</h4>
+            </div>
+            <div class='text'>
+                <p><code>.div {</code></p>
+                <p><code>display: none;</code> /*використовуємо, якщо потрібно приховати контент</p>
+                <p><code>display: block;</code> /*Елемент відображається як блок, займає всю доступну ширину
+                    батьківського
+                    елемента і
+                    починається з нового рядка</p>
+                <p><code>display: inline;</code> /*Елемент відображається в рядку, поряд з іншими елементами, і не
+                    переноситься на
+                    новий
+                    рядок</p>
+                <p><code>display: inline-block;</code> /*Елемент відображається в рядку, але може мати ширину, висоту,
+                    внутрішні
+                    відступи та інші властивості блокових елементів</p>
+                <p><code>}</code></p>
+                <p>Рекомендовано використовувати в парі з атрибутом
+                    <code>hidden</code> в середині тегу.
+                </p>
+                <code class="code-block" id="hiddenCode"
+                    style="display: none;">&lt;div hidden&gt;Контент в середині не буде відображатись&lt;/div&gt;</code>
+                <button onclick="toggleCodeVisibility()">Показати код</button>
+            </div>
+        </div>
+    </div>
+
 </div>
