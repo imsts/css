@@ -165,17 +165,147 @@ router.get('/cssLesson11', function (req, res) {
 
 //           ↙ тут вводимо шлях (PATH) до сторінки
 router.get('/cssLesson12', function (req, res) {
-  // res.render генерує нам HTML сторінку
+  const data = {
+    cards: [
+      {
+        name: 'Внутрішня рамка',
+        text: 'border — це CSS властивість, яка використовується для встановлення стилів внутрішньої рамки елемента',
+        code: `
+        .example {
+          border: 1px solid #000000;
+          border-width: 1px;
+          border-style: solid;
+          border-color: #000000;
+          }
+        `,
+      },
 
-  //            ↙ cюди вводимо назву файлу з сontainer
+      {
+        name: 'Внутрішня рамка верхньої сторони',
+        text: 'border-top — це CSS властивість, яка використовується для встановлення стилів внутрішньої верхньої рамки елемента',
+        code: `
+        .example {
+          border-top: 2px dotted red;
+          border-top-width: 2px;
+          border-top-style: dotted;
+          border-top-color: red;
+          }
+        `,
+      },
+
+      {
+        name: 'Внутрішня рамка правої сторони',
+        text: 'border-right — це CSS властивість, яка використовується для встановлення стилів внутрішньої правої рамки елемента',
+        code: `
+        .example {
+          border-right: 3px groove blue;
+          border-right-width: 3px;
+          border-right-style: groove;
+          border-right-color: blue;
+          }
+        `,
+      },
+
+      {
+        name: 'Внутрішня рамка нижньої сторони',
+        text: 'border-bottom — це CSS властивість, яка використовується для встановлення стилів внутрішньої нижньої рамки елемента',
+        code: `
+        .example {
+          border-bottom: 1px dashed blue;
+          border-bottom-width: 1px;
+          border-bottom-style: dashed;
+          border-bottom-color: blue;
+          }
+        `,
+      },
+
+      {
+        name: 'Внутрішня рамка лівої сторони',
+        text: 'border-left — це CSS властивість, яка використовується для встановлення стилів внутрішньої лівої рамки елемента',
+        code: `
+        .example {
+          border-left: 1px dashed blue;
+          border-left-width: 1px;
+          border-left-style: dashed;
+          border-left-color: blue;
+          }
+        `,
+      },
+
+      {
+        name: 'Зовнішня рамка',
+        text: 'outline — це CSS властивість, яка використовується для встановлення зовнішньої рамки елемента.',
+        code: `
+        .example {
+          outline: 2px solid red;
+          outline-width: 2px;
+          outline-style: solid;
+          outline-color: red;
+          }
+        `,
+      },
+
+      {
+        name: 'Зсув зовнішньої рамки',
+        text: 'outline-offset — це CSS властивість, яка встановлює відступ зовнішньої рамки від межі елемента',
+        code: `
+        .example {
+          outline-offset: 5px;
+          }
+        `,
+      },
+
+      {
+        name: 'Радіус закруглення рамки',
+        text: 'border-radius — це CSS властивість, яка використовується для встановлення стилів закруглення рамки елемента',
+        code: `
+        .example {
+          border-radius: 10% 30% 50% 70%;
+          border-top-left-radius: 10%;
+          border-top-right-radius: 30%;
+          border-bottom-right-radius: 50%;
+          border-bottom-left-radius: 70%;
+          border-start-start-radius: 50%;
+          border-start-end-radius: 70%;
+          border-end-start-radius: 50%;
+          border-end-end-radius: 70%;
+          }
+        `,
+      },
+
+      {
+        name: 'Максимальна висота',
+        text: 'max-height — це властивість CSS, яка встановлює максимальну висоту елемента.',
+        code: `
+        .example {
+          max-height: 300px;
+        }
+        `,
+      },
+
+      {
+        name: 'Розмір коробки',
+        text: 'box-sizing — це CSS властивість, яка визначає як розраховувати розмір елемента',
+        code: `
+        .example {
+          box-sizing: content-box;
+        }
+        `,
+      },
+      // Other card objects
+    ],
+  }
+
+  // Render the 'cssLesson11' template and pass the 'data' object
   res.render('cssLesson12', {
     layout: 'cssLesson12',
     page: {
       title: 'CSS | Lesson12',
     },
+    data: data, // Pass the 'data' object to the template
   })
-  //                  ↑↑ сюди вводимо JSON дані
 })
+//                  ↑↑ сюди вводимо JSON дані
 
 // ================================================================
 

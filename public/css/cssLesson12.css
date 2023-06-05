@@ -5,5 +5,10 @@
 }
 
 body {
-  background: rgb(161, 161, 161);
+  background: rgb(255, 255, 255);
+}
+
+.nav-link.active {
+  background-color: #39026f;
+  font-weight: bold;
 }
