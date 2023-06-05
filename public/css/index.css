@@ -18,6 +18,9 @@ body {
   color: rgb(215, 255, 17);
   width: 60%;
   margin: 0 auto;
+  text-shadow: 2px 2px 2px #350582;
+  box-shadow: 5px 5px 10px 0px #454444;
+  cursor: grab;
 }
 
 .nav-link.active {

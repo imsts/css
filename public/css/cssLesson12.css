@@ -8,6 +8,50 @@ body {
   background: rgb(255, 255, 255);
 }
 
+.content {
+  background-color: #f9f9f9;
+  box-shadow: 1px 2px 5px gray;
+  margin: 3px;
+  padding: 15px;
+  border: 2px solid #2f06e4;
+  border-radius: 6px 40px 6px 40px;
+  cursor: pointer;
+  vertical-align: baseline;
+}
+
+pre {
+  color: #0800a9;
+}
+
+.div {
+  color: gray;
+  border: 1px solid #000000;
+}
+
+span {
+  display: inline;
+}
+
+.lesson12 {
+  margin: 25px;
+  background: rgb(94, 251, 149);
+  padding: 30px;
+  outline: 4px solid red;
+}
+
+.lesson12 > p {
+  color: blue;
+}
+
+.lesson12 > span {
+  display: inline;
+  background: yellow;
+  padding: 10px;
+  margin: auto;
+  min-width: 120px;
+  box-sizing: content-box;
+}
+
 .nav-link.active {
   background-color: #39026f;
   font-weight: bold;
