@@ -46,12 +46,12 @@ router.get('/cssLesson11', function (req, res) {
         name: 'Відображення',
         text: 'display — це CSS властивість, яка визначає відображення елемента на веб-сторінці',
         code: `
-          .div {
-            display: none;
-            display: block;
-            display: inline;
-            display: inline-block;
-          }
+        .example {
+          display: none;
+          display: block;
+          display: inline;
+          display: inline-block;
+        }
         `,
       },
 
@@ -59,8 +59,8 @@ router.get('/cssLesson11', function (req, res) {
         name: 'Зовнішній відступ',
         text: 'margin — це CSS властивість, яка задає зовнішні відступи елементу, відносно сусідніх елементів',
         code: `
-        .div {
-        margin: 10px;
+        .example {
+          margin: 10px;
         }
         `,
       },
@@ -69,8 +69,8 @@ router.get('/cssLesson11', function (req, res) {
         name: 'Внутрішній відступ',
         text: 'padding — це CSS властивість, яка задає відступи від країв батьківського елементу (внутрішні відступи)',
         code: `
-        .div {
-        padding: 20px;
+        .example {
+          padding: 20px;
         }
         `,
       },
@@ -80,7 +80,7 @@ router.get('/cssLesson11', function (req, res) {
         text: 'width - це властивість CSS, яка визначає ширину елемента. Ця властивість не застосовується до лінійних елементів',
         code: `
         .example {
-        width: 250px;
+          width: 250px;
         }
         `,
       },
@@ -90,7 +90,7 @@ router.get('/cssLesson11', function (req, res) {
         text: 'height - це CSS властивість, яка визначає висоту елемента.',
         code: `
         .example {
-        height: max-content;
+          height: max-content;
         }
         `,
       },
@@ -100,7 +100,7 @@ router.get('/cssLesson11', function (req, res) {
         text: 'min-width — це властивість CSS, яка встановлює мінімальну ширину елемента.',
         code: `
         .example {
-        min-width: 150px;
+          min-width: 150px;
         }
         `,
       },
@@ -110,7 +110,7 @@ router.get('/cssLesson11', function (req, res) {
         text: 'max-width — це властивість CSS, яка встановлює максимальну ширину елемента.',
         code: `
         .example {
-        max-width: 300px;
+          max-width: 300px;
         }
         `,
       },
@@ -120,7 +120,7 @@ router.get('/cssLesson11', function (req, res) {
         text: 'min-height — це властивість CSS, яка встановлює мінімальну висоту елемента.',
         code: `
         .example {
-        min-height: 150px;
+          min-height: 150px;
         }
         `,
       },
