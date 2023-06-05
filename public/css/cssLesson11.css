@@ -15,24 +15,14 @@ body {
   padding: 15px;
 }
 
-code {
+pre {
   color: #0800a9;
-}
-
-.code-block {
-  background-color: #f1f1f1;
-  padding: 10px;
-  font-family: 'Courier New', monospace;
 }
 
 .div {
   color: gray;
-  /* display: none; */
-  /* display: block; */
-  /* display: inline; */
-  /* display: inline-block; */
-}
-
-button {
-  color: #1307fd;
+  /* display: none;
+  display: block;
+  display: inline;
+  display: inline-block; */
 }

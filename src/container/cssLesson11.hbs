@@ -1,6 +1,6 @@
-{{#with main}}
+{{#with data}}
 <div class='row p-4'>
-    {{#each content}}
+    {{#each cards}}
     <div class='col-6'>
         <div class='content'>
             <div class='display'>
@@ -10,11 +10,9 @@
                 <p>{{text}}</p>
             </div>
             <div>
-                {{#if @first}}
-                {{>code-1}}
-                {{else}}
-                {{>code-2}}
-                {{/if}}
+                <pre>
+                    {{code}}
+                </pre>
             </div>
         </div>
     </div>
