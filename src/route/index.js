@@ -339,5 +339,157 @@ router.get('/cssLesson12', function (req, res) {
 
 // ================================================================
 
+// router.get Створює нам один ентпоїнт
+
+//           ↙ тут вводимо шлях (PATH) до сторінки
+router.get('/cssLesson13', function (req, res) {
+  const data = {
+    cards: [
+      {
+        name: 'Назва',
+        text: 'Пояснення',
+        code: `
+        .example {
+
+          }
+        `,
+      },
+
+      {
+        name: 'Назва',
+        text: 'Пояснення',
+        code: `
+        .example {
+
+          }
+        `,
+      },
+
+      {
+        name: 'Назва',
+        text: 'Пояснення',
+        code: `
+        .example {
+
+          }
+        `,
+      },
+
+      {
+        name: 'Назва',
+        text: 'Пояснення',
+        code: `
+        .example {
+
+          }
+        `,
+      },
+
+      {
+        name: 'Назва',
+        text: 'Пояснення',
+        code: `
+        .example {
+
+          }
+        `,
+      },
+
+      {
+        name: 'Назва',
+        text: 'Пояснення',
+        code: `
+        .example {
+
+          }
+        `,
+      },
+
+      {
+        name: 'Назва',
+        text: 'Пояснення',
+        code: `
+        .example {
+
+          }
+        `,
+      },
+
+      {
+        name: 'Назва',
+        text: 'Пояснення',
+        code: `
+        .example {
+
+          }
+        `,
+      },
+
+      {
+        name: 'Назва',
+        text: 'Пояснення',
+        code: `
+        .example {
+
+          }
+        `,
+      },
+
+      {
+        name: 'Назва',
+        text: 'Пояснення',
+        code: `
+        .example {
+
+          }
+        `,
+      },
+
+      {
+        name: 'Назва',
+        text: 'Пояснення',
+        code: `
+        .example {
+
+          }
+        `,
+      },
+
+      {
+        name: 'Назва',
+        text: 'Пояснення',
+        code: `
+        .example {
+
+          }
+        `,
+      },
+
+      {
+        name: 'Назва',
+        text: 'Пояснення',
+        code: `
+        .example {
+
+          }
+        `,
+      },
+      // Other card objects
+    ],
+  }
+
+  // Render the 'cssLesson11' template and pass the 'data' object
+  res.render('cssLesson13', {
+    layout: 'cssLesson13',
+    page: {
+      title: 'CSS | Lesson13',
+    },
+    data: data, // Pass the 'data' object to the template
+  })
+})
+//                  ↑↑ сюди вводимо JSON дані
+
+// ================================================================
+
 // Підключаємо роутер до бек-енду
 module.exports = router

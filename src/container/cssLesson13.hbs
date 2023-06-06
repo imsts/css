@@ -1,0 +1,31 @@
+<div class="lesson13">
+    <div class="p2">
+        <h1>Практика</h1>
+    </div>
+    <p>Перевірка CSS властивості</p>
+    <span>Приклад</span>
+    <span>Приклад</span>
+    <span>Приклад</span>
+</div>
+
+{{#with data}}
+<div class='row p-4'>
+    {{#each cards}}
+    <div class='col-6'>
+        <div class='content'>
+            <div class='name'>
+                <h4>{{name}}</h4>
+            </div>
+            <div class='text'>
+                <p>{{text}}</p>
+            </div>
+            <div>
+                <pre>
+                    {{code}}
+                </pre>
+            </div>
+        </div>
+    </div>
+    {{/each}}
+</div>
+{{/with}}
