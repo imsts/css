@@ -1,0 +1,13 @@
+* {
+  font-family: 'Montserrat', sans-serif;
+  font-display: swap;
+  font-optical-sizing: auto;
+}
+
+body {
+  background: rgb(255, 255, 255);
+}
+
+.nav-link.active {
+  font-weight: bold;
+}
