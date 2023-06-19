@@ -1,0 +1,49 @@
+<div class="page">
+    <div class="page_content">
+        <div class="page_block">
+            <header class="header row g-0">
+                <div class="col-3">
+                    {{> logo }}
+                </div>
+                <nav class="header_nav col-9">
+                    {{!-- {{> nav-2 list=header isVertical=true }} --}}
+                    <div class="header_nav_right">
+                        {{> nav-2 list=header }}
+                    </div>
+                </nav>
+            </header>
+            {{> divider }}
+        </div>
+
+        <div class="page_block">
+            <div class="hero">
+                {{#with hero}}
+                {{> hero title=title text=text}}
+                <a class="button" href="{{button.url}}">{{button.text}}</a>
+                {{/with}}
+            </div>
+        </div>
+
+        <div class="page_block">
+            Prewiew
+        </div>
+
+        <div class="page_block">
+            {{> divider }}
+            <footer class="row footer">
+                <div class="col-3">
+                    {{> logo }}
+                    <span class="footer_copyright">Copyright 2023</span>
+                </div>
+                {{#each footer}}
+                <div class="col-3">
+                    <span class="footer_title">
+                        {{title}}
+                    </span>
+                    {{> nav-2 list=links isVertical=true }}
+                </div>
+                {{/each}}
+            </footer>
+        </div>
+    </div>
+</div>
