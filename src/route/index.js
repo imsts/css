@@ -1,6 +1,6 @@
 // Підключаємо технологію express для back-end сервера
 const express = require('express')
-// Cтворюємо роутер - місце, куди ми підключаємо ендпоїнти
+// Створюємо роутер - місце, куди ми підключаємо ентпоїнт
 const router = express.Router()
 
 // ================================================================
@@ -11,7 +11,7 @@ const router = express.Router()
 router.get('/', function (req, res) {
   // res.render генерує нам HTML сторінку
 
-  //            ↙ cюди вводимо назву файлу з сontainer
+  //            ↙ сюди вводимо назву файлу з container
   res.render('index', {})
   //                  ↑↑ сюди вводимо JSON дані
 })
@@ -24,7 +24,7 @@ router.get('/', function (req, res) {
 router.get('/cssLesson10', function (req, res) {
   // res.render генерує нам HTML сторінку
 
-  //            ↙ cюди вводимо назву файлу з сontainer
+  //            ↙ сюди вводимо назву файлу з container
   res.render('cssLesson10', {
     layout: 'cssLesson10',
     page: {
@@ -629,7 +629,7 @@ router.get('/template-1', function (req, res) {
 router.get('/template-2', function (req, res) {
   // res.render генерує нам HTML сторінку
 
-  //            ↙ cюди вводимо назву файлу з сontainer
+  //            ↙ сюди вводимо назву файлу з container
   res.render('template-2', {
     layout: 'template-2',
     page: {
@@ -868,5 +868,5 @@ router.get('/template-2', function (req, res) {
 
 // ================================================================
 
-// Підключаємо роутер до бек-енду
+// Підключаємо роутер до бек-енді
 module.exports = router
