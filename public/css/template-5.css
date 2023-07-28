@@ -90,6 +90,7 @@
 
 .logo a {
   text-decoration: none;
+  color: var(--color-white);
 }
 
 .nav-2 {

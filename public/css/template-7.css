@@ -74,9 +74,10 @@
   .logo {
       display: flex;
       padding: var(--space-s) var(--space-m);
-
       background: var(--color-purple);
       border-radius: var(--border-radius-d);
+      text-decoration: none;
+      color: #ffffff;
   }
 
   .nav {

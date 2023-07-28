@@ -80,8 +80,8 @@
 
 .logo {
   font-size: 18px;
-  color: var(--color-white);
   background: var(--color-brand);
+  color: var(--color-white);
 
   width: 24px;
   height: 24px;
@@ -94,6 +94,7 @@
 
 .logo a {
   text-decoration: none;
+  color: var(--color-white);
 }
 
 .nav-2 {

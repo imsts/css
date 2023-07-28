@@ -181,6 +181,7 @@ body {
 
 .hero_label {
   font-size: var(--size-1);
+  text-decoration: none;
 }
 
 .hero_title {
