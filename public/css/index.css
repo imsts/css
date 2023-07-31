@@ -10,6 +10,10 @@
   border-style: ridge;
 }
 
+.centered-div:hover {
+  background-color: #64a6bd;
+}
+
 .centered-div > h2 {
   color: rgb(215, 255, 17);
   width: 60%;
@@ -17,6 +21,10 @@
   text-shadow: 2px 2px 2px #350582;
   box-shadow: 5px 5px 10px 0px #454444;
   cursor: grab;
+}
+
+.centered-div > h2:hover {
+  color: white;
 }
 
 .nav-link.active {
